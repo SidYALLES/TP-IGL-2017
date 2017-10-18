@@ -50,7 +50,9 @@ public class VectorHelper {
     public static void formulVect(ArrayList<Integer> tab)
     {}
     public static int formule(int n)
-    {}
+    {
+        return n*n;
+    }
 
 
     }
