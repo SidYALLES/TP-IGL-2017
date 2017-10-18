@@ -21,8 +21,28 @@ public class VectorHelper {
             }
         }
     }
-    public static ArrayList<Integer> somVect(ArrayList<Integer> tab1,ArrayList<Integer> tab2)throws TailleException
-    {}
+    /**
+     *
+     * @param tab1 premier vecteur
+     * @param tab2 deuxiéme vecteur
+     * @return tab vecteur contenant la somme des deux vecteurs
+     * @throws TailleException renvoi une exception si les tailles des deux vecteurs sont différentes
+     */
+    public static ArrayList<Integer> somVect(ArrayList<Integer> tab1,ArrayList<Integer> tab2)throws
+            TailleException
+    {
+        ArrayList<Integer> tab=new ArrayList<Integer>();
+        if(tab1.size()!=tab2.size()){
+            throw new TailleException();
+        }
+        else{
+            for(int i=0;i<tab1.size();i++){
+                tab.set(i,tab1.get(i)+tab2.get(i));
+            }
+        }
+        return tab;
+    }
+
     public static void invVect(ArrayList<Integer> tab)
     {}
     public static ArrayList<Integer> extVect(ArrayList<Integer> tab)
