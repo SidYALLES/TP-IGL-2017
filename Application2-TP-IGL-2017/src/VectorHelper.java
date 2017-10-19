@@ -36,7 +36,8 @@ public class VectorHelper {
             throw new TailleException();
         }
         else{
-            for(int i=0;i<tab1.size();i++){
+            int i;
+            for( i=0;i<tab1.size();i++){
                 tab.add(tab1.get(i)+tab2.get(i));
             }
         }
@@ -44,7 +45,8 @@ public class VectorHelper {
     }
     public static int formule(int n)
     {
-        return n*n;
+        int m=n*n;
+        return m;
     }
 
 
