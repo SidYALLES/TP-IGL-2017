@@ -43,11 +43,6 @@ public class VectorHelper {
         }
         return tab;
     }
-    public static int formule(int n)
-    {
-        int m=n*n;
-        return m;
-    }
 
 
     }
