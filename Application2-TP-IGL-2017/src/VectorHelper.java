@@ -19,10 +19,12 @@ public class VectorHelper
         public static void invVect(ArrayList<Integer> tab)
         {
             int i,v,j=tab.size()-1;
-            for(i=0;i<tab.size()/2;i++){
-                v=tab.get(i);
-                tab.set(i,tab.get(j));
-                tab.set(j,v);
+            for(i=0;i<tab.size()/2;i++)
+            {
+            v=tab.get(i);
+            tab.set(i,tab.get(j));
+            tab.set(j,v);
+            j--;
             }
         }
 
