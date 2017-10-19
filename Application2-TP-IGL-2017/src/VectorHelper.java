@@ -10,12 +10,7 @@ public class VectorHelper
 
     public class VectorHelper
     {
-        public static void triVect(ArrayList<Integer> tab)
-        {}
-
-        public static ArrayList<Integer> somVect(ArrayList<Integer> tab1,ArrayList<Integer> tab2)throws TailleException
-        {}
-
+        
         public static void invVect(ArrayList<Integer> tab)
         {
             int i,v,j=tab.size()-1;
