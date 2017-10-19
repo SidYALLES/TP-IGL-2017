@@ -13,11 +13,11 @@ public class VectorHelper {
         int i,j,v;
         for(i=0;i<tab.size()-1;i++){
             for(j=0;j<tab.size()-1-i;j++){
-                if(tab.get(j)>tab.get(j+1)){
-                    v=tab.get(j);
-                    tab.set(j,tab.get(j));
-                    tab.set(j+1,v);
-                }
+               if(tab.get(j)>tab.get(j+1)){
+                   v=tab.get(j);
+                   tab.set(j,tab.get(j+1));
+                   tab.set(j+1,v);
+               }
             }
         }
     }
@@ -37,18 +37,11 @@ public class VectorHelper {
         }
         else{
             for(int i=0;i<tab1.size();i++){
-                tab.set(i,tab1.get(i)+tab2.get(i));
+                tab.add(tab1.get(i)+tab2.get(i));
             }
         }
         return tab;
     }
-
-    public static void invVect(ArrayList<Integer> tab)
-    {}
-    public static ArrayList<Integer> extVect(ArrayList<Integer> tab)
-    {}
-    public static void formulVect(ArrayList<Integer> tab)
-    {}
     public static int formule(int n)
     {
         return n*n;
