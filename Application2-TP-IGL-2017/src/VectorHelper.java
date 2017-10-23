@@ -1,32 +1,49 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ArrayList;
 
-/**
- * Created by acer on 18/10/2017.
- */
 public class VectorHelper
 {
-    import java.util.ArrayList;
-
-    public class VectorHelper
+    public static void triVect(ArrayList<Integer> tab)
     {
-        public static void triVect(ArrayList<Integer> tab)
-        {}
-
-        public static ArrayList<Integer> somVect(ArrayList<Integer> tab1,ArrayList<Integer> tab2)throws TailleException
-        {}
-
-        public static void invVect(ArrayList<Integer> tab)
-        {
-            int i,v,j=tab.size()-1;
-            for(i=0;i<tab.size()/2;i++){
-                v=tab.get(i);
-                tab.set(i,tab.get(j));
-                tab.set(j,v);
+        int i,j,v;
+        for(i=0;i<tab.size()-1;i++){
+            for(j=0;j<tab.size()-1-i;j++){
+                if(tab.get(j)>tab.get(j+1)){
+                    v=tab.get(j);
+                    tab.set(j,tab.get(j+1));
+                    tab.set(j+1,v);
+                }
             }
         }
+    }
 
-        public static ArrayList<Integer> extVect(ArrayList<Integer> tab)
+    public static ArrayList<Integer> somVect(ArrayList<Integer> tab1,ArrayList<Integer> tab2) throws TailleException
+    {
+        ArrayList<Integer> tab=new ArrayList<Integer>();
+        if(tab1.size()!=tab2.size()){
+            throw new TailleException();
+        }
+        else{
+            for(int i=0;i<tab1.size();i++){
+                tab.add(tab1.get(i)+tab2.get(i));
+            }
+        }
+        return tab;
+    }
+
+    public static void invVect(ArrayList<Integer> tab)
+    {
+        int i,v,j=tab.size()-1;
+        for(i=0;i<tab.size()/2;i++){
+            v=tab.get(i);
+            tab.set(i,tab.get(j));
+            tab.set(j,v);
+            j--;
+        }
+    }
+
+     public static ArrayList<Integer> extVect(ArrayList<Integer> tab)
         {
             int max=0,min=0;
             ArrayList<Integer> extremums=new ArrayList<Integer>();
@@ -57,7 +74,7 @@ public class VectorHelper
             int size=tab.size();
             for(int i=0;i<size;i++)
             {
-                tab.add(i,(tab.get(i)^2)-1);
+                tab.set(i,formule(tab.get(i)));
             }
         }
 
@@ -65,5 +82,4 @@ public class VectorHelper
         {
             return n*n-1;
         }
-    }
 }
