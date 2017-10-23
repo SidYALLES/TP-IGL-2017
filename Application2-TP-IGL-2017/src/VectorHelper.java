@@ -2,6 +2,7 @@ import java.util.ArrayList;
 public class VectorHelper {
     public static void triVect(ArrayList<Integer> tab)
     {
+        
         int i,j,v;
         for(i=0;i<tab.size()-1;i++){
             for(j=0;j<tab.size()-1-i;j++){
@@ -19,6 +20,7 @@ public class VectorHelper {
         ArrayList<Integer> tab=new ArrayList<Integer>();
         if(tab1.size()!=tab2.size()){
             throw new TailleException();
+            
         }
         else{
             int i;
