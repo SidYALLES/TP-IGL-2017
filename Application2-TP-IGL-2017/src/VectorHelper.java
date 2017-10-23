@@ -1,13 +1,5 @@
 import java.util.ArrayList;
-
-/**
- * Created by acer on 18/10/2017.
- */
 public class VectorHelper {
-    /**
-     * trier un vecteur donné en parametre selon la méthode des bulles
-     * @param tab vecteur
-     */
     public static void triVect(ArrayList<Integer> tab)
     {
         int i,j,v;
@@ -21,13 +13,6 @@ public class VectorHelper {
             }
         }
     }
-    /**
-     *
-     * @param tab1 premier vecteur
-     * @param tab2 deuxiéme vecteur
-     * @return tab vecteur contenant la somme des deux vecteurs
-     * @throws TailleException renvoi une exception si les tailles des deux vecteurs sont différentes
-     */
     public static ArrayList<Integer> somVect(ArrayList<Integer> tab1,ArrayList<Integer> tab2)throws
             TailleException
     {
