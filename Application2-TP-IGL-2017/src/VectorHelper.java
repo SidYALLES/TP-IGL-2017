@@ -1,14 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/**
- * Created by acer on 18/10/2017.
- */
 public class VectorHelper
-{
-    import java.util.ArrayList;
-
-    public class VectorHelper
     {
         
         public static void invVect(ArrayList<Integer> tab)
@@ -62,5 +55,4 @@ public class VectorHelper
         {
             return n*n-1;
         }
-    }
 }
