@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+
+
 public class VectorHelper {
     public static void triVect(ArrayList<Integer> tab)
     {
