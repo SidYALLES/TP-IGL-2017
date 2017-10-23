@@ -44,5 +44,4 @@ public class VectorHelper {
         return tab;
     }
 
-
     }
