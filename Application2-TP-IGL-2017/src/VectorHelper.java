@@ -108,11 +108,8 @@ public class VectorHelper
             }
         }
 
-        public static int formule(int n,int m)
+        public static int formule(int n)
         {
-            int a=0 ;
-            m=a+5;
-            n=a-3;
-            return m*n;
+            return n*n-1;
         }
 }
